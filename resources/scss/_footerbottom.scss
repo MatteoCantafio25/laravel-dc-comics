@@ -1,0 +1,44 @@
+.footer-bottom {
+    height: 130px;
+    background-color: #303030;
+}
+
+.right {
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    i {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        color: #0282F9;
+    }
+}
+
+.left{
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        border: 2px solid #0282F9;
+    }
+}
+
+
+.content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+}
