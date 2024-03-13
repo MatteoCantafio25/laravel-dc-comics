@@ -3,11 +3,11 @@
         <a role="button" href="#">CURRENT SERIES</a>
     </div>
         <div class="content-container">
-            @foreach ($series as $index => $serie )
+            @foreach ($comics as $comic)
             <div class="series-card">
-                <a href="{{route('product', $index)}}">  
-                    <img src="{{$serie['thumb']}}" alt="{{$serie['series']}}">
-                    <h3>{{$serie['series']}}</h3>
+                <a href="{{route('comics.show', $comic)}}">  
+                    <img src="{{$comic->thumb}}" alt="{{$comic->series}}">
+                    <h3>{{$comic->series}}</h3>
                 </a>    
             </div>
             @endforeach

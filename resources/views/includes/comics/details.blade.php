@@ -7,7 +7,7 @@
                     <h4>Art by:</h4>
                 </div>
                 <div class="right-detail">
-                    <p class="cl-blue">{{ implode(', ', $product['artists']) }}</p>
+                    <p class="cl-blue">{{ $comic->artists }}</p>
                 </div>
             </div>
             <div class="detail b-top b-bottom">
@@ -15,7 +15,7 @@
                     <h4>Written by:</h4>
                 </div>
                 <div class="right-detail">
-                    <p class="cl-blue">{{ implode(', ', $product['writers']) }}</p>
+                    <p class="cl-blue">{{ $comic->writers }}</p>
                 </div>
             </div>
         </div>
@@ -26,7 +26,7 @@
                     <h4>Series:</h4>
                 </div>
                 <div class="right-detail">
-                <p class="cl-blue">{{$product['series']}}</p>
+                <p class="cl-blue">{{ $comic->series }}</p>
                 </div>
             </div>
             <div class="detail b-top">
@@ -34,7 +34,7 @@
                     <h4>U.S Price:</h4>
                 </div>
                 <div class="right-detail">
-                    <p>{{$product['price']}}</p>
+                    <p>{{ $comic->price }}</p>
                 </div>
             </div>
             <div class="detail b-top b-bottom">
@@ -42,7 +42,7 @@
                     <h4>On Sale Date:</h4>
                 </div>
                 <div class="right-detail">
-                    <p>{{$product['sale_date']}}</p>
+                    <p>{{ $comic->sale_date }}</p>
                 </div>
             </div>
         </div>

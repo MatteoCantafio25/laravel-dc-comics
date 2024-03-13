@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Laravel Comics Detail Page')
+@section('title', 'Laravel Comics Layout')
 
 @section('cdns')
     <!-- Fontawesome -->
@@ -8,10 +8,11 @@
 @endsection
 
 @section('main-content')
-    @include('includes.products.serie')
+    <!-- Includo il main dalla cartella includes -->
+    @include('includes.main')
 @endsection
 
-
-@section('details')
-    @include('includes.products.details')
+@section('spam')
+    <!-- Includo la sezione spam dalla cartella includes -->
+    @include('includes.spam')
 @endsection
