@@ -4,9 +4,9 @@
             <a role="button" href="#">SIGN-UP NOW!</a>
         </div>
         <div class="right">
-            <ul>
+            <ul class="mb-0 p-0">
                 <li>
-                    <h3>FOLLOW US</h3>
+                    <h3 class="mb-0">FOLLOW US</h3>
                 </li>
                 <li><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></li>
                 <li><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></li>

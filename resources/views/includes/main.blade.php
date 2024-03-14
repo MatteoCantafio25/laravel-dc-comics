@@ -7,7 +7,7 @@
             <div class="series-card">
                 <a href="{{route('comics.show', $comic)}}">  
                     <img src="{{$comic->thumb}}" alt="{{$comic->series}}">
-                    <h3>{{$comic->series}}</h3>
+                    <h3 class="mb-0">{{$comic->series}}</h3>
                 </a>    
             </div>
             @endforeach

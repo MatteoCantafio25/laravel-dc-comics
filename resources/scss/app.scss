@@ -1,6 +1,3 @@
-//@import '~bootstrap/scss/bootstrap';
-
-
 @use "generics";
 @use "fonts";
 @use "home_main";
@@ -13,3 +10,5 @@
 @use "spam";
 @use "footertop";
 @use "footerbottom";
+
+@import '~bootstrap/scss/bootstrap';
