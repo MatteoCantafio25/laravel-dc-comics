@@ -47,4 +47,5 @@
             </div>
         </div>
     </div>
+    <a class="btn btn-primary ms-5" href="{{route('comics.index')}}">Go Back</a>
 </section>

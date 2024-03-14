@@ -2,7 +2,7 @@
     <div class="card my-5">
         <div class="card-title d-flex align-items-center justify-content-between p-3">
             <h1 class="mb-0">Add Comic form</h1>
-            <a class="btn btn-secondary" href="{{route('comics.index')}}">Indietro</a>
+            <a class="btn btn-secondary" href="{{route('comics.index')}}">Go Back</a>
         </div>
         <div class="card-body p-3">
             @if($errors->any())
