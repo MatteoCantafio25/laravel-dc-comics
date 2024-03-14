@@ -18,8 +18,8 @@ return new class extends Migration
             $table->text('thumb')->nullable();
             $table->string('price', 20);
             $table->string('series', 50);
-            $table->string('sale_date', 30);
-            $table->string('type', 30);
+            $table->date('sale_date');
+            $table->enum('type',['comic book','graphic novel']);
             $table->string('artists');
             $table->string('writers');
             $table->timestamps();

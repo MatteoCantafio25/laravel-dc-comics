@@ -229,23 +229,15 @@ class ComicSeeder extends Seeder
 
         // Giro sull'array comics
         foreach ($comics as $comic){
-            // Istanzio un nuovo comic
+        // Istanzio un nuovo comic
         $new_comic = new Comic();
             
-        // Dico che l'array writers e artists si dovranno trasformare in una stringa dove ogni elemento dell'array è separato da una virgola
-        $impWriters = implode(', ', $comic['writers']);
-        $impArtists = implode(', ', $comic['artists']);
+        // Prendo il valore del singolo comic e con la funzione implode l'array diventerà una stringa, dove ogni elemento verrà separato dall'altro da una virgola
+        $comic['artists'] = implode(', ', $comic['artists']);
+        $comic['writers'] = implode(', ', $comic['writers']);
 
-        // Rimuovo gli array writers e artists dall'array comic
-        unset($comic['writers']);
-        unset($comic['artists']);
-
-        // Uso la funzione fill per riempire comic con l'array modificato
+        // Inserisco i valori di $comic al nuovo comic
         $new_comic->fill($comic);
-
-        // Do i nuovi valori ai campi writers e artists
-        $new_comic->writers = $impWriters;
-        $new_comic->artists = $impArtists;
 
         // Salvo nel database
         $new_comic->save();
