@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
-@section('title', 'Create Comic')
+@section('title', 'Edit Comic')
 
 @section('main-content')
- @include('includes.forms.create_comic')
+ @include('includes.forms.edit_comic')
 @endsection
 
 @section('spam')
