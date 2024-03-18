@@ -47,7 +47,9 @@ class ComicController extends Controller
         $comic->save();
 
         // Faccio il redirect alla pagina show e passo l'id del nuovo comic per vederlo in pagina
-        return to_route('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id)
+        ->with('type', 'success')
+        ->with('message', "$comic->title creato con successo.");
     }
 
     /**
@@ -81,7 +83,9 @@ class ComicController extends Controller
         $comic->save();
 
         // Faccio il redirect alla pagina show e passo l'id del comic per vederlo in pagina
-        return to_route('comics.show', $comic->id);
+        return to_route('comics.show', $comic->id)
+        ->with('type', 'success')
+        ->with('message', "$comic->title modificato con successo.");
     }
 
     /**
@@ -91,6 +95,8 @@ class ComicController extends Controller
     {
         $comic->delete();
 
-        return to_route('comics.index');
+        return to_route('comics.index')
+        ->with('type', 'success')
+        ->with('message', "$comic->title eliminato con successo.");
     }
 }

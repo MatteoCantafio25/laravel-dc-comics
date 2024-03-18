@@ -20,7 +20,10 @@
     @include('includes.header')
 
     <!-- Jumbotron -->
-    <div class="jumbotron-container"></div>
+    <div class="jumbotron-container">
+        <!-- Alert -->
+        @include('includes.forms.alert')
+    </div>
 
     <!-- Main -->
     @yield('main-content')
