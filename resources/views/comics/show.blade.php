@@ -15,3 +15,21 @@
 @section('details')
     @include('includes.comics.details')
 @endsection
+
+@section('scripts')
+   <script>
+        // Prendo l'elemento che mi interessa
+        const deleteForm = document.getElementById('delete-form');
+        
+        deleteForm.addEventListener('submit', e => {
+            // Elimino il comportamento naturale del form
+            e.preventDefault();
+        
+             // Chiedo la conferma all'utente
+            const confirmation = confirm('Sei sicuro di voler eliminare {{$comic->title}}?');
+        
+            // Se conferma invio il form
+            if(confirmation) deleteForm.submit();
+        });
+   </script>
+@endsection 

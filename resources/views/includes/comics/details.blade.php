@@ -2,7 +2,7 @@
 <div class="buttons-container d-flex align-items-center justify-content-end gap-2 py-3">
     <a class="btn btn-primary" href="{{route('comics.index')}}">Go Back</a>
     <a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}">Edit</a>
-    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+    <form action="{{route('comics.destroy', $comic->id)}}" method="POST" id="delete-form">
         @csrf
         @method('DELETE')
         <button class="btn btn-danger" type="submit">Delete</button>
