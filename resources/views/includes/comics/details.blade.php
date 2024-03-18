@@ -1,3 +1,15 @@
+<!-- Buttons -->
+<div class="buttons-container d-flex align-items-center justify-content-end gap-2 py-3">
+    <a class="btn btn-primary" href="{{route('comics.index')}}">Go Back</a>
+    <a class="btn btn-warning" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+    <form action="{{route('comics.destroy', $comic->id)}}" method="POST">
+        @csrf
+        @method('DELETE')
+        <button class="btn btn-danger" type="submit">Delete</button>
+    </form>
+</div>
+
+<!-- Details Section -->
 <section id="details">
     <div class="details-container">
         <div class="talent">
@@ -47,6 +59,5 @@
             </div>
         </div>
     </div>
-    <a class="btn btn-primary ms-5" href="{{route('comics.index')}}">Go Back</a>
-    <a class="btn btn-warning ms-2" href="{{route('comics.edit', $comic->id)}}">Edit</a>
+    
 </section>
